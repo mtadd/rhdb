@@ -6,11 +6,12 @@ SETUP
 git clone git@github.com:mtadd/rhdb.git
 python venv ./rhdb
 cd rhdb
-pip install -r requirements.txt
 source bin/activate
+pip3 install -r requirements.txt
+```
 
-2. Creating database and user if necessary.
-3. update sqlalchemy connection string for in rhdb_config.py
+2. Creating database and user, and grant privileges if necessary.
+3. update sqlalchemy connection string in ./rhdb_config.py
 
      "<dbms>+<driver>://<dbuser>:<dbpass>@<dbhost>/<database>"
 
