@@ -1,10 +1,10 @@
 SETUP
 -----
 
-1. Sourcing from github and setting up python environment
+1. Sourcing from github and setting up python environment (I'm using 3.6.1)
 ```
 git clone git@github.com:mtadd/rhdb.git
-python venv ./rhdb
+python3 -m venv ./rhdb
 cd rhdb
 source bin/activate
 pip3 install -r requirements.txt
