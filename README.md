@@ -51,7 +51,7 @@ year, which will be necessary for solving Problem 3c. The relevant columns are
 
 ```
 mysql -u rhdb -p rhdb < create_etl_table.sql
-python rhdb.py etl_scoring
+python rhdb.py etl
 ```
 
 Problem 3a
