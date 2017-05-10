@@ -62,8 +62,6 @@ def analyze_csv(table, df):
 
     return dtypes, uniques, maxlen
 
-    sql = gen_create_table_sql(table, dtypes, uniques, maxlen)
-
 #dumps info about csv table used to help prepare table schema
 def dump_table_info(table, dtypes, uniques, maxlen):
     print('TABLE',table)
@@ -103,8 +101,8 @@ def main(cmd):
         df = load_csv(path, table_dtypes.get(table,None))
         table_info = analyze_csv(table, df)
         
-        sql = gen_create_table_sql(table, *table_info)
         if(cmd == 'sql'):
+            sql = gen_create_table_sql(table, *table_info)
             print(sql)
 
         if(cmd == 'dump'):
