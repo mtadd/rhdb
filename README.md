@@ -13,9 +13,12 @@ pip3 install -r requirements.txt
 2. Creating database and user, and grant privileges if necessary.
 3. update sqlalchemy connection string in ./rhdb_config.py
 
+```
      "<dbms>+<driver>://<dbuser>:<dbpass>@<dbhost>/<database>"
+```:w
 
-   Example: 
+
+#### Example: 
 ```
 db_connstr = "mysql+pymysql://rhdb:rhdb@localhost/rhdb"
 ```
